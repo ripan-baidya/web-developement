@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div>div</div> 
-    <span>span</span>
-    
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae autem mollitia nesciunt,
-    suscipit aperiam voluptatibus eum iste. Laborum tenetur temporibus dolores cupiditate iure nostrum
-    mollitia, doloremque modi vitae quod?
-</body>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+
+            /* values: inline, block, inline-block, hidden */
+            display: block;
+
+            /* visibility: element will not be visible but will take space */
+            visibility: hidden;
+            background-color: rgb(234, 227, 227);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main">div 1</div>
+    <div class="main">div 2</div>
+    <div class="main">div 3</div>
+  </body>
 </html>

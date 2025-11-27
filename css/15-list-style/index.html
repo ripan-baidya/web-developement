@@ -6,38 +6,37 @@
     <title>List Style</title>
     <style>
       /**
-        * The list-style-position property determines where the list markers (bullets or numbers) are placed in relation to the content.
-        * it has two values: inside and outside
-        * 1. inside: (default) List markers are inside the content's box. This is the default behavior.
-        * 2. outside: List markers are outside the content's box, typically to the left of the content, creating a hanging indent effect.
-        */
+       * The list-style-position property determines where the list markers (bullets or numbers) are placed in relation to the content.
+       * it has two values: inside and outside
+       * 1. inside: (default) List markers are inside the content's box. This is the default behavior.
+       * 2. outside: List markers are outside the content's box, typically to the left of the content, creating a hanging indent effect.
+       */
 
       .ul1 {
         /* values: disc, circle, square */
         list-style-type: square;
-
-        /* inside, outside */
-        list-style-position: inside;
+        list-style-position: inside;  /* inside, outside */
       }
 
       .li1 {
         /* values: decimal, lower-alpha, upper-alpha, lower-roman, upper-roman etc */
         list-style-type: lower-alpha;
-
-        /* values: inside, outside */
         list-style-position: inside;
       }
     </style>
   </head>
   <body>
-    <!-- List Style in CSS -->
-    <!-- List Style is used to style the list items -->
+    <!--  ****** List Style in CSS ******
+    List Style is used to style the list items
+    -->
 
+    <!-- unordered list -->
     <ul class="ul1">
       <li>apple</li>
       <li>orange</li>
     </ul>
 
+    <!-- ordered list -->
     <ol class="li1">
       <li>potato</li>
       <li>tomato</li>

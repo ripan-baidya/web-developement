@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          flex-direction: row;
+        }
+
+        h1 {
+          font-size: 35px;
+        }
+      }
+
+      /* For landscape mode */
+      @media (orientation: landscape) {
+        body {
+          background-color: peachpuff;
+        }
+      }
+
+      /* For high-resolution displays (Retina) */
+      @media (min-resolution: 2dppx) {
+        img {
+          image-rendering: crisp-edges;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <div class="container">i am div</div>
+  </body>
+</html>

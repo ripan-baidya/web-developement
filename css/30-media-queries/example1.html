@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        /* mobile device */
+        @media (max-width: 576px) {
+            .box {
+                background-color: blue;
+            }
+        }
+
+        /* tablet device */
+        @media (min-width: 576px) and (max-width: 768px) {
+            .box {
+                background-color: green;
+            }
+        }
+
+        /* laptop device */
+        @media (min-width: 768px) and (max-width: 992px) {
+            .box {
+                background-color: yellow;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    | Device Type | Screen Width | Common Usage     |
+    | ----------- | ------------ | ---------------- |
+    | Extra small | `< 576px`    | Mobile           |
+    | Small       | `≥ 576px`    | Mobile landscape |
+    | Medium      | `≥ 768px`    | Tablet           |
+    | Large       | `≥ 992px`    | Laptop           |
+    | Extra large | `≥ 1200px`   | Desktop          |
+    -->
+    <!-- Lets, understand the media queries with example -->
+    <div class="box"></div>
+  </body>
+</html>
